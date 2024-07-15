@@ -1,0 +1,360 @@
+body {
+    background-color: #160B00;
+}
+
+.navbar {
+    border-bottom: 1px solid #FE9900;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .nav-item a:hover {
+    color: #FE9900;
+}
+
+.down1 {
+    background-color: #FE9900;
+}
+
+.down1 a {
+    color: #160B00;
+}
+.btn0{
+    border:1px solid rgb(254,153,0);
+border:1px solid linear-gradient(153deg, rgba(254,153,0,1) 41%, rgba(22,11,0,1) 59%);
+color: white;
+font-weight: bold;
+font-size: 15px;
+}
+.fw1 {
+    font-weight: 100;
+    font-size: 28px;
+}
+
+.grey {
+    color: #666666;
+    font-weight: 700;
+    font-size: 20px;
+}
+.text1{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+@media(max-width:375px){
+    .text1{
+        font-size: 38px;
+    }
+}
+.img {
+    width: 20px;
+}
+
+.first-con .two h1 {
+    font-size: 70px;
+}
+
+.bordered {
+    border: 1px solid #773F04;
+}
+
+.bord-bottom {
+    border-bottom: 2px solid #646464
+}
+
+.form-control::placeholder {
+    color: #ffffff;
+}
+
+.form-control {
+    color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.two {
+    font-size: 90px;
+    line-height: 1;
+    font-weight: 600;
+}
+@media (min-width:536px){
+    .two{
+        font-size: 80px;
+    }
+}
+@media (max-width:492px){
+    .two{
+        font-size: 70px;
+    }
+}
+@media (max-width:768px){
+    .two{
+        font-size: 60px;
+    }
+}
+.bg {
+    background-color: #666666;
+}
+
+.accordion::after {
+    font-family: 'Font Awesome 6 Free';
+    content: '\2b';
+    font-weight: 900;
+    transition: transform 0.3s ease;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #FE9900;
+    border-radius: 360%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accordion-item p {
+    font-size: 18px;
+}
+
+.accordion[aria-expanded="true"]::after {
+    transform: rotate(135deg);
+}
+
+.myform input,
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.box {
+    background-color: #FFEFDF;
+}
+
+.box1 {
+    background-color: #160B00;
+}
+
+.video {
+    position: absolute;
+    right: 200px;
+    top: 680px;
+}
+
+.download {
+    color: #FE9900;
+    background-color: none;
+    border: 1px solid #FE9900;
+}
+
+.course .btn:hover {
+    color: #FE9900;
+    background-color: none;
+    border: 1px solid #FE9900;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.course {
+    background-color: #0C0600;
+    color: white;
+    box-shadow: 7px 7px 0px 0 #FE9900;
+    transition: width;
+}
+
+.course:hover {
+    background-color: #FFEFDF;
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 7px 0px 0 #0C0600;
+}
+
+.right {
+    border-right: 2px solid black;
+}
+
+.right-arrow {
+    background-color: #160B00;
+    border-radius: 100%;
+    color: white;
+}
+
+.left-arrow {
+    background-color: #D9D9D9;
+    border-radius: 100%;
+    color: white;
+}
+
+.num1 {
+    border-bottom: 3px solid #FE9900;
+}
+
+
+.card h1 {
+    font-size: 60px;
+}
+
+.card p {
+    font-size: 25px;
+}
+
+.top {
+    margin-top: 200px;
+}
+
+.social:hover {
+    background-color: #646464;
+}
+
+.fs1 {
+    font-size: 50px;
+
+    font-weight: 700;
+}
+
+.fs2 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+@media (max-width:524px) {
+    .fs2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .fs1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width:525px) {
+    .fs2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .fs1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+.view {
+    color: #0C0600;
+    background-color: #FE9900;
+}
+
+.likes {
+    background-color: #160B00;
+    color: white;
+}
+@media (max-width:404px){
+    .navbar-brand img{
+        width: 210px;
+    }
+}
+ .bord-bottom {
+     border-bottom: 1px solid white;
+ }
+
+ .error {
+     color: red;
+     font-size: 12px;
+ }
+
+ /* blog detail page  */
+ .sticky-content {
+    position: relative;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white; /* Optional: to ensure it doesn't overlap content underneath */
+    transition: top 0.3s ease-in-out; /* Smooth transition for top position */
+}
+.btn-viewmore{
+    margin-top: 15px;
+    color: white;
+    background-color: #773F04;
+    width: 100%;
+    height: 55px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .btn-viewmore:hover{
+    border: 1px solid #773F04;
+    color: #773F04;
+  }
+
+  .btn-viewmore1 {
+    margin: 5px;
+    flex: 1;
+    white-space: nowrap;
+    color: white;
+    background-color: #773F04;
+    width: 100%;
+}
+.btn-viewmore1:hover{
+    border: 1px solid #773F04;
+    color: #773F04;
+  }
+
+.btn-container {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn-viewmore1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pagination-container div {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-container h3 {
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.pagination-container .material-icons {
+    cursor: pointer;
+    padding: 5px;
+}
+
+@media (max-width: 767.98px) {
+    .pagination-container h3 {
+        margin: 5px 5px;
+        padding: 5px;
+    }
+
+    .pagination-container .material-icons {
+        padding: 5px;
+    }
+}
