@@ -55,113 +55,60 @@
                 </div> -->
                 <div class="container">
                     <div class="row d-flex flex-row justify-content-center btn-container">
-                        <div class="col-6 col-md-2">
-                            <button class="btn  btn-viewmore1 rounded-5 active">ALL</button>
+                    <div class="col-6 col-md-2 item" data-category="all">
+                    <button class="btn  btn-viewmore1 rounded-5 active">ALL</button>
+                    </div>
+                    <?php
+                    if(!empty($categorylist))
+                    {
+                        foreach($categorylist as $list)
+                        { ?>
+
+                      
+                        <div class="col-6 col-md-2 item" data-category="<?php echo strtolower($list->Title); ?>">
+                            <button class="btn  btn-viewmore1 rounded-5 active"><?= $list->Title; ?></button>
                         </div>
-                        <div class="col-6 col-md-2">
-                            <button class="btn  btn-viewmore1 rounded-5">Latest Courses</button>
-                        </div>
-                        <div class="col-6 col-md-2">
-                            <button class="btn  btn-viewmore1 rounded-5">Exam Notification</button>
-                        </div>
-                        <div class="col-6 col-md-2">
-                            <button class="btn  btn-viewmore1 rounded-5">Latest Article</button>
-                        </div>
-                        <div class="col-12 col-md-2">
-                            <button class="btn  btn-viewmore1 rounded-5">Success Stories</button>
-                        </div>
+
+                        <?php }
+                    }
+                    ?>
+                        
                     </div>
                 </div>
                 
                 <div class="col-md-12">
                     <div class="row">
+
+                    <?php
+                    if(!empty($updatelist))
+                    {
+                        foreach($updatelist as $list)
+                        { ?>
+
+
+                       <!-- <div class="blog-item" > -->
                         <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>June 19<sup>th</sup> 2024</h3>
+                         mt-4 blog-item" data-categories="<?php echo strtolower($list->category_title); ?>">
+                            <h3><?= date('F jS Y', strtotime($list->CreatedAt)); ?></h3>
                         </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>UPSC Prelims 2024 Exam Date Announced <span class="material-symbols-outlined">
-                                    north_east
+                        <div class="col-md-10 mt-4 blog-item" data-categories="<?php echo strtolower($list->category_title); ?>">
+                            <h4><?= $list->Title; ?>
                                 </span></h4>
-                            <p>The UPSC Prelims 2024 will be held on June 2, 2024. Start preparing with our
-                                comprehensive study materials and mock
-                                tests.</p>
+                            <p><?= $list->Description; ?></p>
                         </div>
+                        <!-- </div> -->
+
+                        <?php }
+                    }
+                    ?>
                         <!-- two -->
-                        <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>June 12<sup>th</sup> 2024</h3>
-                        </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>New Batch for IAS Mains 2024 Commences <span class="material-symbols-outlined">
-                                    north_east
-                                </span></h4>
-                            <p>Join our new batch starting July 1, 2024, for focused coaching on GS Papers and Essay
-                                Writing. Enroll now to secure your
-                                seat!</p>
-                        </div>
-                        <!-- three-->
-                        <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>June 8<sup>th</sup> 2024</h3>
-                        </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>Success Story: From Aspirant to IAS Officer<span class="material-symbols-outlined">
-                                    north_east
-                                </span></h4>
-                            <p>Read about Anjali Sharma's journey to becoming an IAS officer. Her tips and strategies
-                                are now available in our blog
-                                section.</p>
-                        </div>
-                        <!-- four -->
-                        <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>June 5<sup>th</sup> 2024</h3>
-                        </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>UPSC Prelims 2024 Exam Date Announced<span class="material-symbols-outlined">
-                                    north_east
-                                </span></h4>
-                            <p>The UPSC Prelims 2024 will be held on June 2, 2024. Start preparing with our
-                                comprehensive study materials and mock
-                                tests..</p>
-                        </div>
-                        <!-- five -->
-                        <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>May 22<sup>nd</sup> 2024</h3>
-                        </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>New Batch for IAS Mains 2024 Commences<span class="material-symbols-outlined">
-                                    north_east
-                                </span></h4>
-                            <p>Join our new batch starting July 1, 2024, for focused coaching on GS Papers and Essay
-                                Writing. Enroll now to secure your
-                                seat!</p>
-                        </div>
-                        <!-- Six -->
-                        <div class="col-md-2 p-0 right
-                         mt-4">
-                            <h3>May 8<sup>nd</sup> 2024</h3>
-                        </div>
-                        <div class="col-md-10 mt-4">
-                            <h4>Success Story: From Aspirant to IAS Officer<span class="material-symbols-outlined">
-                                    north_east
-                                </span></h4>
-                            <p>Read about Anjali Sharma's journey to becoming an IAS officer. Her tips and strategies
-                                are now available in our blog
-                                section.</p>
-                        </div>
+                        
 
                     </div>
                 </div>
-                <div class="container">
+                <!-- <div class="container">
                     <div class="col-md-12 pagination-container my-4">
-                        <!-- <div class="left-arrow">
-                            <span class="material-icons">
-                                chevron_left
-                            </span>
-                        </div> -->
+                      
                         <div>
                             <h3 class="num1">1</h3>
                         </div>
@@ -183,13 +130,9 @@
                         <div>
                             <h3 class="num2">12</h3>
                         </div>
-                        <!-- <div class="right-arrow">
-                            <span class="material-icons rounded-5">
-                                chevron_right
-                            </span>
-                        </div> -->
+                       
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-12">
                     <div>
                         <h1>Get all the latest news & updates</h1>
@@ -358,6 +301,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+        <script>
+    $(document).ready(function() {
+        $('.item').on('click', function() {
+            var category = $(this).data('category'); // Get the data-category attribute value
+            $('.blog-item').each(function() {
+                var categories = $(this).data('categories'); 
+                // Get data-categories attribute value
+                if (category == 'all' || categories.includes(category)) {
+                    $(this).fadeIn('slow').removeClass('hidden'); // Show blog items matching selected category or 'All'
+                } else {
+                    $(this).fadeOut('slow').addClass('hidden'); // Hide blog items not matching selected category
+                }
+            });
+        });
+    });
+</script>
      
         
 </body>

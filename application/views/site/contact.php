@@ -141,28 +141,31 @@
                         <h1 class="text-white">Tell Us About Yourself</h1>
                     </div>
 
-                <form action="#" id="form">
+                <form action="#" id="savecontactform">
                     <div class="my-2 bord-bottom">
                         <div class="d-flex ">
-                            <input type="text" id="name" name="name" placeholder="Your Name"
+                            <input type="text" required id="firstname" name="firstname" placeholder="Your Name"
                             class="bg-transparent border-0 form-control w-100 my-3">
+                         
                             <span class="material-symbols-outlined text-white pt-3">person</span>
+                            
                         </div>
                         <div class="error" id="nameError"></div>
                     </div>
                 
                     <div class="my-2  bord-bottom">
                         <div class="d-flex">
-                            <input type="email" name="email" id="email" placeholder="Email Id"
+                            <input type="email" required name="email" id="email" placeholder="Email Id"
                             class="bg-transparent w-100 my-3 form-control border-0">
                             <span class="material-symbols-outlined pt-3 text-white">mail</span>
+                            <span></span>
                         </div>
                         <div class="error" id="emailError"></div>
                     </div>
                 
                     <div class="my-2 bord-bottom">
                         <div class="d-flex">
-                            <input type="tel" name="phone" id="phone" placeholder="Contact Number"
+                            <input type="tel" required name="phone"  id="phone" placeholder="Contact Number" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
                                 class="bg-transparent border-0 form-control w-100 my-3">
                             <span class="material-symbols-outlined text-white pt-3">call</span>
                         </div>
@@ -170,7 +173,7 @@
                     </div>
                     <div class="my-2  bord-bottom">
                         <div class="d-flex">
-                            <input type="text" name="courses" id="courses" placeholder="Courses You Are Interested In"
+                            <input type="text" required name="courses" id="courses" placeholder="Courses You Are Interested In"
                                 class="bg-transparent border-0 w-100 my-3 form-control">
                             <span class="material-symbols-outlined text-white pt-3">description</span>
                         </div>
@@ -189,7 +192,7 @@
                     <div id="formError" class="error"></div>
                 
                     <div>
-                        <button type="submit" class="btn btn2 fs14 p-2 bg-secondary"><span
+                        <button type="button" onclick="savecontactform()" class="btn btn2 fs14 p-2 bg-secondary"><span
                                 class="text-decoration-none text-white">Submit</span>
                         </button>
                     </div>
@@ -358,7 +361,7 @@ function savecontactform() {
 
     if (!isValid) {
         // Optionally, you can handle invalid form state here
-        console.log('Form is invalid. Cannot proceed with AJAX.');
+        alert('please fill the all required fields.');
         return; // Exit function if validation fails
     }
 
@@ -459,14 +462,14 @@ function validateForm() {
         // Validate required fields
         if (element.required && element.value.trim() === '') {
             isValid = false;
-            element.classList.add('er');
-            element.nextElementSibling.innerHTML = 'This field is required.';
+            // element.classList.add('er');
+            // element.nextElementSibling.innerHTML = 'This field is required.';
         }
 
         if (element.type === 'email' && !emailRegex.test(element.value.trim())) {
             isValid = false;
-            element.classList.add('er');
-            element.nextElementSibling.innerHTML = 'Please enter a valid email address.';
+            // element.classList.add('er');
+            // element.nextElementSibling.innerHTML = 'Please enter a valid email address.';
         }
     }
 

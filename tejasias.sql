@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 15, 2024 at 08:38 AM
+-- Generation Time: Jul 16, 2024 at 06:09 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `nutritionist`
+-- Database: `tejasias`
 --
 
 -- --------------------------------------------------------
@@ -78,8 +78,9 @@ INSERT INTO `blog_tbl` (`BlogId`, `Category`, `AuthorName`, `Image`, `Title`, `S
 (1, 3, 'john wicks', '1.jpg', 'this is title of blog', 'this is short description of blogs', '<p>this is full description of blog post</p>', '2024-06-28', 1, '2024-06-21 21:19:36.108922', '2024-06-21 21:19:36.108922', 1),
 (5, 6, 'Emily Johnson', 'blog-1.png', 'The Benefits of Hydration for Weight Loss', 'Discover how staying hydrated can support your weight loss goals and improve overall health.', '<div id=\"idTextPanel\" class=\"jqDnR\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px;\"><p style=\"padding: 0px; line-height: normal; font-family: Verdana, G', '2024-06-26', 1, '2024-06-25 00:53:57.687693', '2024-06-25 00:53:57.687693', 0),
 (6, 7, 'Sarah Thompson', 'blog-2.png', 'Cultivating a Healthy Relation with Food', 'Learn how practicing mindful eating can help you develop a healthier relationship with food and improve your overall well-being.', '<div id=\"idTextPanel\" class=\"jqDnR\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px;\"><p style=\"padding: 0px; line-height: normal; font-family: Verdana, G', '2024-06-14', 1, '2024-06-25 00:55:30.525714', '2024-06-25 00:55:30.525714', 0),
-(7, 8, 'Mark Wilson', 'blog-3.png', 'Carbohydrates, Proteins, and Fats', 'Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.', '<h4>Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.</h4><div id=\"idTextPanel\" class=\"jqDnR\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-fami', '2024-06-20', 1, '2024-06-25 00:56:23.161068', '2024-06-25 00:56:23.161068', 0),
-(8, 9, 'Emily Johnson', 'blog-4.png', 'Quick and Nutritious Options', 'Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.', '<div id=\"idTextPanel\" class=\"jqDnR\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px;\"><p style=\"padding: 0px; line-height: normal; font-family: Verdana, G', '2024-06-12', 1, '2024-06-25 00:57:11.188852', '2024-06-25 00:57:11.188852', 0);
+(7, 8, 'Mark Wilson', 'blog-3.png', 'Carbohydrates, Proteins, and Fats', 'Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.', '<ol><li><b>Get a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.</b></li><li>hjgjgjgjgjhgjgj</li><li>jkhkgjgjhghjh</li></ol>', '2024-06-20', 1, '2024-06-25 00:56:23.161068', '2024-06-25 00:56:23.161068', 0),
+(8, 9, 'Emily Johnson', 'blog-4.png', 'Quick and Nutritious Options', 'Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.', '<div id=\"idTextPanel\" class=\"jqDnR\" style=\"margin: 0px; padding: 0px; position: relative; color: rgb(102, 102, 102); font-family: Verdana, Geneva, Helvetica, sans-serif; font-size: 11px;\"><p style=\"padding: 0px; line-height: normal; font-family: Verdana, G', '2024-06-12', 1, '2024-06-25 00:57:11.188852', '2024-06-25 00:57:11.188852', 1),
+(9, 7, 'john wick', 'android-chrome-192x192.png', 'fourth blog', 'this is description of blog fourth', '<p>this is full description of fourth blog</p>', '2024-07-18', 1, '2024-07-15 17:33:07.498228', '2024-07-15 17:33:07.498228', 0);
 
 -- --------------------------------------------------------
 
@@ -483,7 +484,65 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `user_agent`, `timestamp`, `data`
 ('aao4hi1n7cetgo60796cujfu4v68vpi8', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1720652074;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
 ('4t7r4i84c910jjk8betfq186f7uq713l', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1720652403;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
 ('qt1cbdfmnv7tvphp4r4r02hplb4k6iv5', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1720828067;'),
-('nj3jucvkg2ti649hhvs1v65iqqisun49', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721025363;status|s:146:\"<div class=\"alert alert-danger\" id=\"alert\"> <strong><i class=\"fa fa-warning\"></i> &nbsp; Some Problem Occurred !</strong> Please Try Again. </div>\";__ci_vars|a:1:{s:6:\"status\";s:3:\"old\";}user_id|s:1:\"2\";userName|s:5:\"Admin\";');
+('nj3jucvkg2ti649hhvs1v65iqqisun49', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721025363;status|s:146:\"<div class=\"alert alert-danger\" id=\"alert\"> <strong><i class=\"fa fa-warning\"></i> &nbsp; Some Problem Occurred !</strong> Please Try Again. </div>\";__ci_vars|a:1:{s:6:\"status\";s:3:\"old\";}user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('g78m656sj68qnlau215r6mjg46m83mtq', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721026391;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('s9u0tbutqb7aaumin945k4os5aegf141', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721026834;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('j7bhgsd8uvjt70fs1qnd9lgq24h6dg48', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721027235;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('je3v01hl6gd1u500k33bn74n5l54ujs7', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721027598;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('qd78dqt90o15bthjctef1co2mf6vqa2q', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721028003;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('84mmombcsc2b06qjj0u0asqh83e53ph1', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721028095;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('19n7d65bcj5as9819c9n2t2doi5jjihr', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721064789;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('hn4ocah30jgc7jbkoa4b3knrnf56qmgq', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721065102;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('nq5qud31qq8plt2o5q7oq4ct2vi5ce4c', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721065430;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('rjgucd3b4l9gufe92q2ci1g95a7djjgr', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721065732;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('ueavg7p0j2odkqv5qen5hldh2bvk8pnu', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721066101;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('gpj4fvlfar55sggq5693c1s4av5sanc6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721066478;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('907q3en8bsbs2nfs1gecp9fu7b7u9o02', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721066788;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('o7jks8hvdj287rcp67dvvgaf3bttku1s', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721067207;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('sed9afb2rr8tnihcog7ebbi96j1fnmo5', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721067662;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('sqli9tjbi4tlh29iie8qbmngcrrtmtaj', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721067662;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('di1qlv7fqujkjkiulfeqa9dhup3rpph6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721069423;'),
+('n5hildvs56gut93sucb51f3bkm23ip7n', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721069735;'),
+('05ko1ub7ida3oaaog6psfcf0lva96c48', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721070078;'),
+('ndab5qotjmkrs3jdtdit0gmtdp84isgn', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721070457;'),
+('7s3a70d9o3du24c4f5a77vuk6teouq3q', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721070773;'),
+('c96branmosj1erft82q02tq5f928eqgu', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721071123;'),
+('788ksidtd0q5135l7iqo09pu3kneo3td', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721071505;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('pkr2j0st67o8cgni59d8i59cplm0oirn', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721071880;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('rpebbbjsrkfubpv3kbdlbedrj7499q0c', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721072232;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('ljijsl4bf8gek2lse13gnenlmetam846', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721072547;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('4745ius9dkr6v1b8l10tf6qs9068ufpc', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721073131;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('t5tt6me6pq5js333l6g1pk40j7apkmin', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721073628;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('rbnngh4gjj4cnpv8bjon3v2cdri7f4g6', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721074026;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('p8ql95u8avusmn9oknkjgmr2cq14scmd', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721074026;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('bdp8t3vr7sfg7njdrjofidgps47lg6o9', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721132702;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('j9fnlk2fn5tndujbqf6oa9o9gpv0mf22', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721133007;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('tm822jjkcphlh8dt6p6aihageaji922u', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721133336;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('lmv98tqehmnbmvv2iq679f32nqpu1oq8', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721133666;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('m90ng1alp0ba6t91ehcabhqhi9jsrchs', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721134461;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('9sj5cl097koo7b0b5n3epbtmbb4vttvn', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721135011;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('sip02t37t43tsfdq65tuuf20g082qn5r', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721135313;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('81bj5ggfaelooab3mhuntr4ecfeh64fj', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721135677;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('p2sbghpfm31kgcur3nv6ibuk8jtalnbd', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721136031;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('abik6ngiqusego44um5tr1r6ges3r3uv', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721136355;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('21ajdqdrpa1vjl2388b0rquvg8gbnhli', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721136660;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('qmqfda6kk867ht7ae7fuhvejmk5fk20c', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721136992;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('8v69oslvo5hrpd3iap5r5t00na3jfa6k', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721137715;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('8elld01jju9ffevintoo1grmjpqppq5k', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721138166;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('bu2ud83g41q7mgm5eskpsdj3fmkuqpfr', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721138635;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('hqpnb5a0gkiknmba2mmtr375jmqqt94j', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721138990;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('83ojskbk2qtecrsltvkju5s6qcqps495', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721139519;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('5c1dmf43t1fhrlra3r8v1i7h93ba35hh', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721141602;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('lbq6ap83c7998dss88h1cg4kmup8s32t', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721142135;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('uq4emb82jhcg47vvfk5o029c02in74fh', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721142548;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('dlirs4tsacm0adggmr3hrgnfb6s9bi67', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721142894;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('952g2jaslrpbgiuftrissii11amaa5fk', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721144033;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('qh6ojklaio7paqqa33c8pr0fo0e032cq', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721144475;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('8e9lk2bu5d73v62p8mbmbdcolkle2cf9', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721144777;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('nu5ss0jh403opefolufoh2j4gv2pn1ig', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721145092;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('a5lfma0mspbnmmn736atbl858dc8k411', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721145398;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('8lmfqpgkjh7uendu74re8dkomblhh14o', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721146020;user_id|s:1:\"2\";userName|s:5:\"Admin\";'),
+('7dia80o94f1lhn9t5jucpqsed903hjbd', '::1', '', '0000-00-00 00:00:00', '__ci_last_regenerate|i:1721146020;user_id|s:1:\"2\";userName|s:5:\"Admin\";');
 
 -- --------------------------------------------------------
 
@@ -498,25 +557,28 @@ CREATE TABLE `contact_tbl` (
   `Mobile` varchar(10) NOT NULL,
   `Message` varchar(256) NOT NULL,
   `Crerated` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
-  `IsDeleted` int(11) NOT NULL
+  `IsDeleted` int(11) NOT NULL,
+  `Reason` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `contact_tbl`
 --
 
-INSERT INTO `contact_tbl` (`ContactId`, `Name`, `Email`, `Mobile`, `Message`, `Crerated`, `IsDeleted`) VALUES
-(1, 'Rohan', 'tejpratapsahu00@gmail.com', '1234567890', 'this is inquiry messge1', '2023-10-11 05:01:28.000000', 0),
-(2, 'Rohan', 'tejpratapsahu00@gmail.com', '1234567890', 'this is dummy messge', '2023-10-13 11:02:37.000000', 1),
-(3, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'this is contact us message', '2024-06-25 02:37:12.627959', 1),
-(4, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'gssggsgsg', '2024-06-25 02:43:13.571669', 1),
-(5, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'ggdggdgdg', '2024-06-25 02:46:44.460785', 0),
-(6, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'gsgsgggd', '2024-06-25 02:53:09.560211', 0),
-(7, 'rajat', 'admin123@gmail.com', '5454553535', 'this is second message of contact', '2024-06-26 20:04:33.421175', 0),
-(8, 'rajat', 'rajatpatel04959@gmail.com', '5454553535', 'this is text mesage', '2024-06-30 01:12:29.903001', 0),
-(9, 'test ', 'admin123@gmail.com', '5454553535', 'this is second message', '2024-06-30 01:20:06.204205', 0),
-(10, 'test ', 'admin123@gmail.com', '5454553535', 'this is second message', '2024-06-30 01:22:17.554389', 0),
-(11, 'rajat', 'admin123@gmail.com', '5365656464', 'sggssggg', '2024-07-09 07:24:32.486726', 0);
+INSERT INTO `contact_tbl` (`ContactId`, `Name`, `Email`, `Mobile`, `Message`, `Crerated`, `IsDeleted`, `Reason`) VALUES
+(1, 'Rohan', 'tejpratapsahu00@gmail.com', '1234567890', 'this is inquiry messge1', '2023-10-11 05:01:28.000000', 0, ''),
+(2, 'Rohan', 'tejpratapsahu00@gmail.com', '1234567890', 'this is dummy messge', '2023-10-13 11:02:37.000000', 1, ''),
+(3, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'this is contact us message', '2024-06-25 02:37:12.627959', 1, ''),
+(4, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'gssggsgsg', '2024-06-25 02:43:13.571669', 1, ''),
+(5, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'ggdggdgdg', '2024-06-25 02:46:44.460785', 0, ''),
+(6, 'rajat', 'rajatpatel04959@gmail.com', '5365656464', 'gsgsgggd', '2024-06-25 02:53:09.560211', 0, ''),
+(7, 'rajat', 'admin123@gmail.com', '5454553535', 'this is second message of contact', '2024-06-26 20:04:33.421175', 0, ''),
+(8, 'rajat', 'rajatpatel04959@gmail.com', '5454553535', 'this is text mesage', '2024-06-30 01:12:29.903001', 0, ''),
+(9, 'test ', 'admin123@gmail.com', '5454553535', 'this is second message', '2024-06-30 01:20:06.204205', 0, ''),
+(10, 'test ', 'admin123@gmail.com', '5454553535', 'this is second message', '2024-06-30 01:22:17.554389', 0, ''),
+(11, 'rajat', 'admin123@gmail.com', '5365656464', 'sggssggg', '2024-07-09 07:24:32.486726', 0, ''),
+(12, 'Unknown', 'rajatpatel04959@gmail.com', '9285328828', 'this is message of ', '2024-07-16 15:02:46.774523', 0, 'interest 2'),
+(13, 'Unknown', 'unknown@example.com', '0', 'No message', '2024-07-16 15:10:59.893029', 0, 'not available');
 
 -- --------------------------------------------------------
 
@@ -541,7 +603,8 @@ INSERT INTO `gallery_tbl` (`GalleryId`, `ImagePath`, `CreatedAt`, `UpdatedAt`, `
 (5, '1.jpg', '2024-06-22 20:47:07.489158', '2024-06-22 20:47:07.489158', 0),
 (6, 'trading.jpg', '2024-06-22 20:47:34.160035', '2024-06-22 20:47:34.160035', 0),
 (7, 'free-images.jpg', '2024-06-22 20:47:53.604599', '2024-06-22 20:47:53.604599', 0),
-(8, 'background.jpg', '2024-06-22 20:48:13.384759', '2024-06-22 20:48:13.384759', 0);
+(8, 'background.jpg', '2024-06-22 20:48:13.384759', '2024-06-22 20:48:13.384759', 0),
+(9, 'android-chrome-192x192.png', '2024-07-15 17:34:42.848752', '2024-07-15 17:34:42.848752', 0);
 
 -- --------------------------------------------------------
 
@@ -653,7 +716,56 @@ CREATE TABLE `seo_tbl` (
 --
 
 INSERT INTO `seo_tbl` (`SeoId`, `Language`, `SiteTitle`, `SiteDescription`, `SiteMap`, `KeyWords`, `GoogleAnalytics`, `Logo`, `Favicon`) VALUES
-(1, 'english', 'Nutritionist', 'terrt', '3.jpg', 'gsgsg', '', 'Logo.png', 'favicon.ico');
+(1, 'english', 'Tejas IAS Academy', 'terrt', '3.jpg', 'gsgsg', '', 'logo.png', 'favicon.ico');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `syllabus_inquiry`
+--
+
+CREATE TABLE `syllabus_inquiry` (
+  `Id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `number` varchar(10) NOT NULL,
+  `reason` varchar(150) NOT NULL,
+  `created_at` varchar(50) NOT NULL,
+  `IsDeleted` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `syllabus_inquiry`
+--
+
+INSERT INTO `syllabus_inquiry` (`Id`, `name`, `email`, `number`, `reason`, `created_at`, `IsDeleted`) VALUES
+(1, 'rajat kumars', 'rajat.digitalshakha@gmail.com', '5454553535', 'explore_program', '2024-07-16 19:29:21', 0),
+(2, 'rajat kumars', 'rajatpatel04959@gmail.com', '5365656464', 'just_browsing', '2024-07-16 19:44:10', 0),
+(3, 'rajat kumars', 'rajatpatel04959@gmail.com', '5365656464', 'just_browsing', '2024-07-16 19:45:18', 0),
+(4, 'john wick', 'admin123@gamil.com', '5454553535', 'explore_program', '2024-07-16 19:48:57', 0),
+(5, 'Emily Johnson', 'admin@gmail.com', '5454553535', 'just_browsing', '2024-07-16 19:50:55', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `syllabus_tbl`
+--
+
+CREATE TABLE `syllabus_tbl` (
+  `SyllabusId` int(11) NOT NULL,
+  `Category` varchar(256) NOT NULL,
+  `Image` longtext NOT NULL,
+  `CreatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
+  `UpdatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `syllabus_tbl`
+--
+
+INSERT INTO `syllabus_tbl` (`SyllabusId`, `Category`, `Image`, `CreatedAt`, `UpdatedAt`) VALUES
+(2, 'UPSC-IAS', 'myDocument.pdf', '2024-07-16 13:34:19.275199', '2024-07-16 13:34:19.275199'),
+(3, 'CGPSC', 'Rax_invoice.pdf', '2024-07-16 14:11:30.094655', '2024-07-16 14:11:30.094655');
 
 -- --------------------------------------------------------
 
@@ -678,6 +790,55 @@ CREATE TABLE `testimonial_tbl` (
 
 INSERT INTO `testimonial_tbl` (`TestId`, `Name`, `Content`, `Status`, `CreatedAt`, `UpdatedAt`, `IsDeleted`, `Image`) VALUES
 (2, 'Emily Johnson', '<p style=\"color: rgb(103, 106, 108);\"><span style=\"color: rgb(102, 102, 102); font-family: Verdana, Geneva, sans-serif; font-size: 10px;\">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis <', 1, '2024-06-25 01:13:48.204108', '2024-06-25 01:20:05.972313', 0, 'blog-review2.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `update_category_tbl`
+--
+
+CREATE TABLE `update_category_tbl` (
+  `CatId` int(11) NOT NULL,
+  `Title` varchar(256) NOT NULL,
+  `Description` varchar(256) NOT NULL,
+  `Status` int(11) NOT NULL,
+  `CreatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
+  `UpdatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
+  `IsDeleted` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `update_category_tbl`
+--
+
+INSERT INTO `update_category_tbl` (`CatId`, `Title`, `Description`, `Status`, `CreatedAt`, `UpdatedAt`, `IsDeleted`) VALUES
+(3, 'update category', 'desc of update category', 1, '2024-06-19 00:38:29.325093', '2024-06-19 00:38:29.325093', 1),
+(10, 'exam notifications', '', 1, '2024-07-15 19:42:36.537981', '2024-07-15 19:42:36.537981', 0),
+(11, 'success story', '', 1, '2024-07-16 12:37:04.719792', '2024-07-16 12:37:04.719792', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `update_tbl`
+--
+
+CREATE TABLE `update_tbl` (
+  `UpdateId` int(11) NOT NULL,
+  `Category` int(11) NOT NULL,
+  `Title` varchar(150) NOT NULL,
+  `Description` longtext NOT NULL,
+  `Status` int(11) NOT NULL,
+  `CreatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6),
+  `UpdatedAt` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `update_tbl`
+--
+
+INSERT INTO `update_tbl` (`UpdateId`, `Category`, `Title`, `Description`, `Status`, `CreatedAt`, `UpdatedAt`) VALUES
+(2, 10, 'UPSC Prelims 2024 Exam Date Announced', 'The UPSC Prelims 2024 will be held on June 2, 2024. Start preparing with our comprehensive study materials and mock tests.', 1, '2024-07-16 12:36:40.536455', '2024-07-16 12:36:40.536455'),
+(3, 11, 'Success Story: From Aspirant to IAS Officer', 'Read about Anjali Sharma\'s journey to becoming an IAS officer. Her tips and strategies are now available in our blog section', 1, '2024-07-16 12:37:42.952127', '2024-07-16 12:37:42.952127');
 
 -- --------------------------------------------------------
 
@@ -765,10 +926,34 @@ ALTER TABLE `seo_tbl`
   ADD PRIMARY KEY (`SeoId`);
 
 --
+-- Indexes for table `syllabus_inquiry`
+--
+ALTER TABLE `syllabus_inquiry`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indexes for table `syllabus_tbl`
+--
+ALTER TABLE `syllabus_tbl`
+  ADD PRIMARY KEY (`SyllabusId`);
+
+--
 -- Indexes for table `testimonial_tbl`
 --
 ALTER TABLE `testimonial_tbl`
   ADD PRIMARY KEY (`TestId`);
+
+--
+-- Indexes for table `update_category_tbl`
+--
+ALTER TABLE `update_category_tbl`
+  ADD PRIMARY KEY (`CatId`);
+
+--
+-- Indexes for table `update_tbl`
+--
+ALTER TABLE `update_tbl`
+  ADD PRIMARY KEY (`UpdateId`);
 
 --
 -- Indexes for table `user_tbl`
@@ -790,19 +975,19 @@ ALTER TABLE `blog_category_tbl`
 -- AUTO_INCREMENT for table `blog_tbl`
 --
 ALTER TABLE `blog_tbl`
-  MODIFY `BlogId` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `BlogId` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `contact_tbl`
 --
 ALTER TABLE `contact_tbl`
-  MODIFY `ContactId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ContactId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `gallery_tbl`
 --
 ALTER TABLE `gallery_tbl`
-  MODIFY `GalleryId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `GalleryId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `inquiry_tbl`
@@ -829,10 +1014,34 @@ ALTER TABLE `seo_tbl`
   MODIFY `SeoId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `syllabus_inquiry`
+--
+ALTER TABLE `syllabus_inquiry`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `syllabus_tbl`
+--
+ALTER TABLE `syllabus_tbl`
+  MODIFY `SyllabusId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `testimonial_tbl`
 --
 ALTER TABLE `testimonial_tbl`
   MODIFY `TestId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `update_category_tbl`
+--
+ALTER TABLE `update_category_tbl`
+  MODIFY `CatId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `update_tbl`
+--
+ALTER TABLE `update_tbl`
+  MODIFY `UpdateId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user_tbl`

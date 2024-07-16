@@ -38,6 +38,7 @@ class Inquiry_Controller extends CI_Controller
         $this->data['pagename'] = "Inquiry Details";
         $this->data['contactlist'] =  $this->Inquiry_Model->getAllContact();
         $this->data['contactnotify'] = $this->Inquiry_Model->TotalContactInquiry(); 
+        $this->data['syllabuslist'] = $this->Inquiry_Model->getAllSyllabusEnquiry();
         $this->load->view('inquiry/index', $this->data);
     }
 
@@ -59,6 +60,24 @@ class Inquiry_Controller extends CI_Controller
 
         echo json_encode($response);
     }
+
+    public function deletesyllabusinquiry()
+    {
+        $inqId = $_POST['id'];
+        if ($inqId != "") {
+            $result = $this->Inquiry_Model->deletesyllabusinquiry($inqId, array('IsDeleted' => '1'));
+            if ($result) {
+                $response = array("res" => true, 'message' => 'Role deleted successfully.');
+            } else {
+                $response = array('res' => false, 'message' => 'Unable to delete blog.');
+            }
+        } else {
+            $response = array('res' => false, 'message' => 'An unexpected error occurred.');
+        }
+
+        echo json_encode($response);
+    }
+
 
     public function deletedonate()
     {

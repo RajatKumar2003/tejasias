@@ -85,93 +85,35 @@
     <div class="container">
         <div class="col-md-12 text-white">
             <div class="row">
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>June 19<sup>th</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>UPSC Prelims 2024 Exam Date Announced <span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>The UPSC Prelims 2024 will be held on June 2, 2024. Start preparing with our
-                        comprehensive study materials and mock
-                        tests.</p>
-                </div>
-                <!-- two -->
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>June 12<sup>th</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>New Batch for IAS Mains 2024 Commences <span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>Join our new batch starting July 1, 2024, for focused coaching on GS Papers and Essay
-                        Writing. Enroll now to secure your
-                        seat!</p>
-                </div>
-                <!-- three-->
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>June 8<sup>th</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>Success Story: From Aspirant to IAS Officer<span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>Read about Anjali Sharma's journey to becoming an IAS officer. Her tips and strategies
-                        are now available in our blog
-                        section.</p>
-                </div>
-                <!-- four -->
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>June 5<sup>th</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>UPSC Prelims 2024 Exam Date Announced<span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>The UPSC Prelims 2024 will be held on June 2, 2024. Start preparing with our
-                        comprehensive study materials and mock
-                        tests..</p>
-                </div>
-                <!-- five -->
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>May 22<sup>nd</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>New Batch for IAS Mains 2024 Commences<span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>Join our new batch starting July 1, 2024, for focused coaching on GS Papers and Essay
-                        Writing. Enroll now to secure your
-                        seat!</p>
-                </div>
-                <!-- Six -->
-                <div class="col-md-2 p-0 right
-                 mt-4">
-                    <h3>May 8<sup>nd</sup> 2024</h3>
-                </div>
-                <div class="col-md-10 mt-4">
-                    <h4>Success Story: From Aspirant to IAS Officer<span class="material-symbols-outlined">
-                            north_east
-                        </span></h4>
-                    <p>Read about Anjali Sharma's journey to becoming an IAS officer. Her tips and strategies
-                        are now available in our blog
-                        section.</p>
-                </div>
+            <?php
+                    if(!empty($updatelist))
+                    {
+                        foreach($updatelist as $list)
+                        { ?>
 
+
+                       <!-- <div class="blog-item" > -->
+                        <div class="col-md-2 p-0 right
+                         mt-4 blog-item" data-categories="<?php echo strtolower($list->category_title); ?>">
+                            <h3><?= date('F jS Y', strtotime($list->CreatedAt)); ?></h3>
+                        </div>
+                        <div class="col-md-10 mt-4 blog-item" data-categories="<?php echo strtolower($list->category_title); ?>">
+                            <h4><?= $list->Title; ?>
+                                </span></h4>
+                            <p><?= $list->Description; ?></p>
+                        </div>
+                        <!-- </div> -->
+
+                        <?php }
+                    }
+                    ?>
+                <!-- two -->
+               
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="col-md-12 pagination-container my-4 text-white">
-                <!-- <div class="left-arrow">
-                    <span class="material-icons">
-                        chevron_left
-                    </span>
-                </div> -->
+              
                 <div>
                     <h3 class="num1">1</h3>
                 </div>
@@ -193,13 +135,9 @@
                 <div>
                     <h3 class="num2">12</h3>
                 </div>
-                <!-- <div class="right-arrow">
-                    <span class="material-icons rounded-5">
-                        chevron_right
-                    </span>
-                </div> -->
+               
             </div>
-        </div>
+        </div> -->
     </div>
  </section>
  <!-- additional section  -->
@@ -426,14 +364,20 @@
                 </div>
                 <!-- first -->
                 <div class=" owl-carousel owl-carousel1 owl-theme">
-                    <div class="item text-black ">
+                   
+                <?php
+                    if(!empty($testimoniallist))
+                    {
+                        foreach($testimoniallist as $list)
+                        { ?>
+                <div class="item text-black ">
                         <div class=" my-5 text-center text-white">
                             <div class="">
                                 <div class="col-1 mx-auto">
-                                    <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
+                                    <img src="<?= base_url('uploads/testimonial/').$list->Image; ?>" class="img-fluid">
                                 </div>
                                 <div>
-                                    <p class="m-0 fs-6"><b>Ganesh Sharma</b></p>
+                                    <p class="m-0 fs-6"><b><?= $list->Name; ?></b></p>
                                     <p class="text-secondary">Bhilai, Chattisgarh</p>
                                 </div>
                             </div>
@@ -441,124 +385,18 @@
                                 ⭐⭐⭐⭐⭐
                             </div>
                             <div>
-                                <p>The faculty's expertise and the academy's structured approach equipped me with the
-                                    necessary
-                                    skills to ace the exams.</p>
+                                <p><?= $list->Content; ?>.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="item text-black ">
-                        <div class=" my-5 text-center text-white">
-                            <div class="">
-                                <div class="col-1 mx-auto">
-                                    <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
-                                </div>
-                                <div>
-                                    <p class="m-0 fs-6"><b>Neha Sharma</b></p>
-                                    <p class="text-secondary">Bhilai, Chattisgarh</p>
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
-                            <div>
-                                <p>The academy's holistic approach, from the rigorous curriculum to the personal
-                                    mentorship,
-                                    prepared me thoroughly for the
-                                    challenges ahead.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item text-black ">
-                        <div class=" my-5 text-center text-white">
-                            <div class="">
-                                <div class="col-1 mx-auto">
-                                    <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
-                                </div>
-                                <div>
-                                    <p class="m-0 fs-6"><b>Amit sahu</b></p>
-                                    <p class="text-secondary">Bhilai, Chattisgarh</p>
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
-                            <div>
-                                <p>The faculty's dedication and the academy's focus on ethics and leadership have not
-                                    only
-                                    helped me crack the civil
-                                    services exams but also shaped me into a responsible and capable future civil
-                                    servant.</p>
-                            </div>
-                        </div>
-                    </div>
+
+                    <?php }
+                    }
+                    ?>
+                    
                 </div>
                 <!-- second -->
-                <div class=" owl-carousel owl-carousel2 owl-theme">
-                    <div class="item text-black  ">
-                        <div class=" my-5 text-center text-white">
-                            <div class="col-1 mx-auto">
-                                <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
-                            </div>
-                            <div>
-                                <p class="m-0 fs-6"><b>Raj patel</b></p>
-                                <p class="text-secondary">Bhilai, Chattisgarh</p>
-                            </div>
-
-                            <div class="my-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
-                            <div>
-                                <p>We have been using Quantum Solutions for our office stationery and graphic design
-                                    needs for over a year now. Their work is always top-notch and delivered on time.
-                                    Highly recommended for any business looking to enhance their brand.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item text-black ">
-                        <div class=" my-5 text-center text-white">
-                            <div class="">
-                                <div class="col-1 mx-auto">
-                                    <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
-                                </div>
-                                <div>
-                                    <p class="m-0 fs-6"><b>Seema patel</b></p>
-                                    <p class="text-secondary">Bhilai, Chattisgarh</p>
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
-                            <div>
-                                <p>Joining Tejas IAS Academy was the best decision I made for my IAS preparation. The
-                                    comprehensive study material, coupled
-                                    with the interactive teaching methods, made learning engaging and effective.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item text-black ">
-                        <div class=" my-5 text-center text-white">
-                            <div class="">
-                                <div class="col-1 mx-auto">
-                                    <img src="<?= base_url('assets/site/assets') ?>/index1/Profile (1).png" class="img-fluid">
-                                </div>
-                                <div>
-                                    <p class="m-0 fs-6"><b>Asha Gujar</b></p>
-                                    <p class="text-secondary">Bhilai, Chattisgarh</p>
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                ⭐⭐⭐⭐⭐
-                            </div>
-                            <div>
-                                <p>The experienced teachers provided deep insights into the syllabus, and the regular
-                                    mock
-                                    interviews helped me improve my
-                                    presentation and communication skills.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -683,7 +521,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div>
                         <h3>Ask a Different Question</h3>
                     </div>
@@ -703,7 +541,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

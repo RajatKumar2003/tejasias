@@ -39,6 +39,7 @@
         <div class="tabs-container">
                 <ul class="nav nav-tabs">
                     <li class="active"><a data-toggle="tab" href="#tab-1">Contact Inquiries</a></li>
+                    <li><a data-toggle="tab" href="#tab-2">Syllabus Inquiries</a></li>
                    
                   
                 </ul>
@@ -90,6 +91,52 @@
                         </div>
                     </div>
                 
+                    <div id="tab-2" class="tab-pane">
+                        <div class="panel-body">
+                             
+                        <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover dataTables-example issue-tracker">
+
+                             <thead>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Number</th>
+                                <th>Email</th>
+                              
+                                <th>Reason</th>
+                                <th>Action</th>
+                             </thead>
+
+                             <tbody>
+                                <?php
+                                if(!empty($syllabuslist))
+                                {
+                                    $i=1;
+                                    foreach($syllabuslist as $syllabus)
+                                    { ?>
+
+                                    <tr>
+                                       <td> <?php echo $i++; ?></td>
+                                       <td><?php echo $syllabus->name ?></td>
+                                       <td><?php echo $syllabus->number ?></td>
+                                       <td><?php echo $syllabus->email ?></td>
+                                       <td class="issue-info"><?php echo $syllabus->reason; ?></td>
+                                       <td>   <button class="btn btn-danger btn-circle" type="button" onclick="showConfirmation('<?php echo $syllabus->Id; ?>')"><i class="fa fa-trash"></i>
+                                       </button></td>
+                                    </tr>
+
+                                   <?php }
+                                }
+                                
+                                ?>
+                             </tbody>
+
+                            </table>
+                        </div>
+                           
+
+                        </div>
+                    </div>
                    
                 </div>
         </div>
@@ -209,7 +256,7 @@ function performAjaxFunction(global_var) {
 
 
             $.ajax({
-                url: '<?php echo base_url() . 'Inquiry/deleteinquiry'; ?>',
+                url: '<?php echo base_url() . 'Inquiry/deletesyllabusinquiry'; ?>',
                 method: 'POST',
                 data: {
                     id: global_var

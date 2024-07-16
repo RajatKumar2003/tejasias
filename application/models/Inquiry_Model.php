@@ -9,6 +9,12 @@ public function getAllContact()
    return $this->db->get('contact_tbl')->result();
 }
 
+public function getAllSyllabusEnquiry()
+{
+    $this->db->where('isdeleted','0');
+    return $this->db->get('syllabus_inquiry')->result(); 
+}
+
 public function getAllProductInquiry()
 {
     $this->db->select('inquiry_tbl.*, product_category_tbl.title AS category_title,product_tbl.title As product_title');
@@ -36,8 +42,8 @@ public function updateSeo($catId,$data)
 
 public function deleteinquiry($id,$data)
 {
-    $this->db->where('InqId',$id);
-    $this->db->update('inquiry_tbl',$data);
+    $this->db->where('Id',$id);
+    $this->db->update('syllabus_inquiry',$data);
     return $this->db->affected_rows() > 0;
 }
 

@@ -12,6 +12,9 @@ class Site_Controller extends CI_Controller {
       $this->load->model('Seo_Model');
       $this->load->model('Blog_Model');
       $this->load->model('Gallery_Model');
+      $this->load->model('Update_Model');
+      $this->load->model('Syllabus_Model');
+      $this->load->model('Testimonial_Model');
 
       $this->loadSeoData();
   }
@@ -25,6 +28,9 @@ public function index(){
 
   // $this->data['addlist'] = $this->Qrcode_Model->getAllGallery();
   $this->data['pagename'] = "Home";
+  $this->data['categorylist'] = $this->Update_Model->getAllCategory('1');
+  $this->data['updatelist'] = $this->Update_Model->getAllUpdate('1');
+  $this->data['testimoniallist'] = $this->Testimonial_Model->getAllTestimonial('1');
  $this->load->view('site/index',$this->data);
 }
 
@@ -72,7 +78,53 @@ public function contact()
 public function update()
 {
   $this->data['pagename'] = "update";
+  $this->data['categorylist'] = $this->Update_Model->getAllCategory('1');
+  $this->data['updatelist'] = $this->Update_Model->getAllUpdate('1');
   $this->load->view('site/update',$this->data);
+}
+
+public function downloadsyllabus()
+{
+  $id = $this->input->post('syllabusId');
+  $data = array(
+    'name' => $this->input->post('name'),
+    'email' => $this->input->post('email'),
+    'number' => $this->input->post('number'),
+    'reason' => $this->input->post('reason'),
+    'created_at' => date('Y-m-d H:i:s')
+);
+// echo'<br>';print_r($data);exit;
+$result = $this->Syllabus_Model->insert($data);
+
+if($result) {
+     // $this->load->helper('download');
+   
+    $file_name = $this->Syllabus_Model->findSyllabus($id);
+    // echo'<br>';print_r($file_name);exit;
+    $file_path = FCPATH . 'uploads/syllabus/' . $file_name->Image;
+    // echo'<br>';print_r($file_name);exit;
+    // Check if the file exists
+    if (file_exists($file_path)) {
+          $file_content = file_get_contents($file_path);
+
+          // Send the file content in the AJAX response
+          $response = array(
+             'success' => true,
+             'file_content' => base64_encode($file_content),
+             'fileName' => $file_name->Image // Encode the file content if needed
+          );
+
+          $response = $response;
+        
+    } else {
+         $response = array('success' => false, 'message' => 'File not found!');
+    }
+} else {
+    $response = array('success' =>false,'message' =>'An unexpected error occurred');
+}
+// echo'<br>';print_r($response);exit;
+echo json_encode($response);
+
 }
 
 public function unsetsession()
@@ -149,7 +201,7 @@ public function savecontactform()
   // $selectedTypes = array_map('intval', $this->input->post('reasonCheckbox'));
         
    // Implode array into a comma-separated string
-   $typesString = implode(',', $this->input->post('reasonCheckbox'));
+   $typesString = $this->input->post('courses');
 
   $contactData = array(
     'Name' => empty($this->input->post('firstname')) ? 'Unknown' : $this->input->post('firstname'),

@@ -19,6 +19,7 @@ class Admin_Controller extends CI_Controller {
 
         $this->load->model('Login_model');
         $this->load->model('Inquiry_Model');
+        $this->load->model('Seo_Model');
         
         // Fetch data and store in $this->data
         $this->loadDashboardData();
@@ -26,8 +27,9 @@ class Admin_Controller extends CI_Controller {
 
     private function loadDashboardData()
     {
-        $this->data['productnotify'] = $this->Inquiry_Model->TotalProductInquiry();
+        // $this->data['productnotify'] = $this->Inquiry_Model->TotalProductInquiry();
         $this->data['contactnotify'] = $this->Inquiry_Model->TotalContactInquiry();
+        $this->data['editseo'] = $this->Seo_Model->findSeo('1');
     }
 
     public function index()
@@ -35,7 +37,7 @@ class Admin_Controller extends CI_Controller {
        
          $this->data['pagename'] = "Inquiry Details";
          $this->data['contactlist'] =  $this->Inquiry_Model->getAllContact();
-         $this->data['productinquirylist'] = $this->Inquiry_Model->getAllProductInquiry();
+        //  $this->data['productinquirylist'] = $this->Inquiry_Model->getAllProductInquiry();
         $this->load->view('inquiry/index', $this->data);
     }
 

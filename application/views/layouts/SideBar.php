@@ -35,20 +35,28 @@
 
 
 
-            <li>
-                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Blogs</span><span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse">
-                    <li><a href="<?php echo site_url('Blog/category') ?>">Blog Category</a></li>
-                    <li><a href="<?php echo site_url('Blog') ?>">Blogs</a></li>
-
-                </ul>
-            </li>
+            
 
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Updates</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="<?php echo site_url('Update/category') ?>">Update Category</a></li>
                     <li><a href="<?php echo site_url('Update') ?>">Updates</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="<?php echo site_url('Syllabus') ?>"><i class="fa fa-th-large"></i> <span class="nav-label">Syllabus</span> </span></a>
+
+
+            </li>
+
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Blogs</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="<?php echo site_url('Blog/category') ?>">Blog Category</a></li>
+                    <li><a href="<?php echo site_url('Blog') ?>">Blogs</a></li>
 
                 </ul>
             </li>
